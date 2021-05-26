@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ko8ZxDGnYsIbvLzhh7lhq/wx8t8GZXCXWdRcOFiGmsVq90wE5I29gQ3+3eKtIb3mDy2VQYq7RJxJFX/9cXe+Yw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\celia\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\TSMusic\\TSMusic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\celia\\.nuget\\packages\\tmodloader.codeassist\\0.1.2\\tmodloader.codeassist.0.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
