@@ -32,17 +32,6 @@ namespace TSMusic2
 
             if (Main.myPlayer != -1 && !Main.gameMenu)
             {
-                if (!Main.dayTime
-                && Main.player[Main.myPlayer].ZoneOverworldHeight
-                && !Main.player[Main.myPlayer].ZoneJungle
-                && !Main.player[Main.myPlayer].ZoneSnow
-                && !Main.player[Main.myPlayer].ZoneCrimson
-                && !Main.player[Main.myPlayer].ZoneCorrupt)
-                //&& !Main.player[Main.myPlayer].ZoneHoly
-                {
-                    music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/HenesysShadow");
-                    priority = MusicPriority.BiomeLow;
-                }
                 if (Main.player[Main.myPlayer].ZoneHoly)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/DreamHallow");
@@ -58,28 +47,6 @@ namespace TSMusic2
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/CrimsonwoodCrimson");
                     priority = MusicPriority.BiomeHigh;
                 }
-                if (Main.player[Main.myPlayer].ZoneDirtLayerHeight
-                && !Main.player[Main.myPlayer].ZoneJungle
-                && !Main.player[Main.myPlayer].ZoneSnow
-                && !Main.player[Main.myPlayer].ZoneCrimson
-                && !Main.player[Main.myPlayer].ZoneCorrupt
-                && !Main.player[Main.myPlayer].ZoneHoly
-                && !Main.player[Main.myPlayer].ZoneDesert)
-                {
-                    music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/UnderGround");
-                    priority = MusicPriority.Environment;
-                }
-                if (Main.player[Main.myPlayer].ZoneRockLayerHeight
-                && !Main.player[Main.myPlayer].ZoneJungle
-                && !Main.player[Main.myPlayer].ZoneSnow
-                && !Main.player[Main.myPlayer].ZoneCrimson
-                && !Main.player[Main.myPlayer].ZoneCorrupt
-                && !Main.player[Main.myPlayer].ZoneHoly
-                && !Main.player[Main.myPlayer].ZoneDesert)
-                {
-                    music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/AbandonnedMines");
-                    priority = MusicPriority.Environment;
-                }
                 if (Main.player[Main.myPlayer].ZoneSandstorm
                 && Main.player[Main.myPlayer].ZoneDesert)
                 {
@@ -89,32 +56,6 @@ namespace TSMusic2
                 if (Main.player[Main.myPlayer].ZoneBeach)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/BlueWorld");
-                    priority = MusicPriority.BiomeLow;
-                }
-                if (Main.player[Main.myPlayer].ZoneRain
-                && Main.player[Main.myPlayer].ZoneOverworldHeight
-                && !Main.player[Main.myPlayer].ZoneJungle
-                && !Main.player[Main.myPlayer].ZoneCorrupt
-                && !Main.player[Main.myPlayer].ZoneCrimson
-                && !Main.player[Main.myPlayer].ZoneBeach
-                && !Main.player[Main.myPlayer].ZoneHoly
-                && !Main.player[Main.myPlayer].ZoneDesert
-                && !Main.player[Main.myPlayer].ZoneSkyHeight
-                && !Main.player[Main.myPlayer].ZoneSnow)
-                {
-                    music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/MissingYouRain");
-                    priority = MusicPriority.Event;
-                }
-                if (Main.dayTime
-                && Main.player[Main.myPlayer].ZoneOverworldHeight
-                && !Main.player[Main.myPlayer].ZoneDesert
-                && !Main.player[Main.myPlayer].ZoneJungle
-                && !Main.player[Main.myPlayer].ZoneSnow
-                && !Main.player[Main.myPlayer].ZoneCrimson
-                && !Main.player[Main.myPlayer].ZoneCorrupt
-                && !Main.player[Main.myPlayer].ZoneHoly)
-                {
-                    music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/HenesysFields");
                     priority = MusicPriority.BiomeLow;
                 }
                 if (Main.player[Main.myPlayer].ZoneJungle)
