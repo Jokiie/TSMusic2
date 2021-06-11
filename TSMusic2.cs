@@ -56,15 +56,14 @@ namespace TSMusic2
                 if (Main.player[Main.myPlayer].ZoneBeach)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/BlueWorld");
-                    priority = MusicPriority.BiomeLow;
+                    priority = MusicPriority.Environment;
                 }
                 if (Main.player[Main.myPlayer].ZoneJungle)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/JungleBook");
                     priority = MusicPriority.Environment;
                 }
-                if (Main.player[Main.myPlayer].ZoneDesert
-                    && !Main.player[Main.myPlayer].ZoneBeach)
+                if (Main.player[Main.myPlayer].ZoneDesert)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/SunsetDesert");
                     priority = MusicPriority.Environment;
