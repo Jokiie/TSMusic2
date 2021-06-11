@@ -63,7 +63,8 @@ namespace TSMusic2
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/JungleBook");
                     priority = MusicPriority.Environment;
                 }
-                if (Main.player[Main.myPlayer].ZoneDesert)
+                if (Main.player[Main.myPlayer].ZoneDesert
+                    && !Main.player[Main.myPlayer].ZoneBeach)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/SunsetDesert");
                     priority = MusicPriority.Environment;
