@@ -47,8 +47,7 @@ namespace TSMusic2
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/CrimsonwoodCrimson");
                     priority = MusicPriority.BiomeHigh;
                 }
-                if (Main.player[Main.myPlayer].ZoneSandstorm
-                && Main.player[Main.myPlayer].ZoneDesert)
+                if (Main.player[Main.myPlayer].ZoneSandstorm)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/PerionSandstorm");
                     priority = MusicPriority.Environment;
@@ -63,10 +62,10 @@ namespace TSMusic2
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/JungleBook");
                     priority = MusicPriority.Environment;
                 }
-                if (Main.player[Main.myPlayer].ZoneDesert)
+                if (Main.player[Main.myPlayer].ZoneDesert && !Main.player[Main.myPlayer].ZoneBeach)
                 {
                     music = (this).GetSoundSlot(SoundType.Music, "Sounds/Music/SunsetDesert");
-                    priority = MusicPriority.Environment;
+                    priority = MusicPriority.BiomeLow;
                 }
             }
         }
